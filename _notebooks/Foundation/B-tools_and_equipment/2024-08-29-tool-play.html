@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Button Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #ff4500;
+        }
+
+        #game-button {
+            font-size: 1.5em;
+            padding: 15px 30px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #game-button:hover {
+            background-color: #005f5f;
+        }
+
+        #score {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        #start-button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #32cd32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #start-button:hover {
+            background-color: #228b22;
+        }
+
+        #timer {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Button Game!</h1>
+    <button id="start-button">Start Game</button>
+    <div id="timer">Time Left: 10s</div>
+    <button id="game-button" style="display:none;">Click Me!</button>
+    <div id="score">Score: 0</div>
+
+    <script>
+        let score = 0;
+        let timeLeft = 10;
+        let gameInProgress = false;
+
+        const gameButton = document.getElementById('game-button');
+        const scoreDisplay = document.getElementById('score');
+        const timerDisplay = document.getElementById('timer');
+        const startButton = document.getElementById('start-button');
+
+        function startGame() {
+            score = 0;
+            timeLeft = 10;
+            gameInProgress = true;
+            scoreDisplay.innerText = `Score: ${score}`;
+            timerDisplay.innerText = `Time Left: ${timeLeft}s`;
+            gameButton.style.display = 'inline-block';
+            startButton.style.display = 'none';
+
+            const countdown = setInterval(() => {
+                timeLeft--;
+                timerDisplay.innerText = `Time Left: ${timeLeft}s`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdown);
+                    gameInProgress = false;
+                    gameButton.style.display = 'none';
+                    startButton.style.display = 'inline-block';
+                    alert(`Time's up! Your final score is ${score}.`);
+                }
+            }, 1000);
+        }
+
+        function incrementScore() {
+            if (gameInProgress) {
+                score++;
+                scoreDisplay.innerText = `Score: ${score}`;
+            }
+        }
+
+        startButton.addEventListener('click', startGame);
+        gameButton.addEventListener('click', incrementScore);
+    </script>
+</body>
+</html>
