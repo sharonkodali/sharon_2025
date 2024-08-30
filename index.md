@@ -15,12 +15,42 @@ Hi! I'm Sharon Kodali, a passionate student with a love for technology, coding, 
 
 ---
 
+## Guess the Number Game
+
+<p>Try to guess the number I'm thinking of between 1 and 100!</p>
+
+<input type="number" id="guessInput" placeholder="Enter your guess">
+<button id="guessButton">Guess</button>
+
+<p id="result"></p>
+
+<script>
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  let attempts = 0;
+
+  document.getElementById("guessButton").addEventListener("click", function() {
+    const userGuess = parseInt(document.getElementById("guessInput").value);
+    attempts++;
+
+    let resultMessage = '';
+
+    if (userGuess === randomNumber) {
+      resultMessage = `Congratulations! You guessed the right number ${randomNumber} in ${attempts} attempts.`;
+    } else if (userGuess < randomNumber) {
+      resultMessage = "Too low! Try again.";
+    } else if (userGuess > randomNumber) {
+      resultMessage = "Too high! Try again.";
+    }
+
+    document.getElementById("result").innerText = resultMessage;
+  });
+</script>
+
+---
+
 ![Shar](/images/notebooks/foundation/IMG_2776.JPG)  
-
 ![Sh](/images/notebooks/foundation/IMG_2776.JPG)
-
 ![li](/images/notebooks/foundation/IMG_6016.JPG)
-
 ![S](/images/notebooks/foundation/IMG_7198.JPG)
 
 Thank you for visiting! Stay tuned for more updates and posts.
@@ -31,6 +61,7 @@ Thank you for visiting! Stay tuned for more updates and posts.
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
+    padding: 20px;
   }
 
   h1 {
@@ -78,4 +109,32 @@ Thank you for visiting! Stay tuned for more updates and posts.
     border-radius: 8px;
     margin-top: 40px;
   }
+
+  input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+
+  button {
+    background-color: #87cefa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ff6347;
+  }
+
+  #result {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+  }
 </style>
+
