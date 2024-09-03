@@ -48,7 +48,7 @@ Hi! I'm Sharon Kodali, a passionate student with a love for technology, coding, 
 
 ---
 
-![Shar](/images/notebooks/foundation/IMG_2776.JPG)  
+![Shar](/images/notebooks/foundation/IMG_1185%202.png)  
 ![Sh](/images/notebooks/foundation/IMG_2776.JPG)
 ![li](/images/notebooks/foundation/IMG_6016.JPG)
 ![S](/images/notebooks/foundation/IMG_7198.JPG)
@@ -56,8 +56,10 @@ Hi! I'm Sharon Kodali, a passionate student with a love for technology, coding, 
 Thank you for visiting! Stay tuned for more updates and posts.
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
@@ -137,4 +139,5 @@ Thank you for visiting! Stay tuned for more updates and posts.
     margin-top: 20px;
   }
 </style>
+
 
