@@ -1,139 +1,83 @@
 <style>
-    .site-header {
-    font-family: monospace;
-    font-size: 15px;
+    /* Background and general text color */
+    body {
+        background-color: #ffe6f2; /* Soft pink background */
+        color: #333; /* Darker text for readability */
+        font-family: 'Poppins', sans-serif; /* Cute and modern font */
+        font-size: 16px;
+        padding: 20px;
+        transition-duration: 0.2s;
+    }
     
-    position: absolute;
-    transition: top 0.2s ease-in-out;
-    margin-top: 25px;
-    padding-top: 10px;
-    left: -115px;
-    margin-top: 275px;
-  }
-.circular_image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: blue;
-  position:absolute;
-
-  /* commented for demo
-  float: left;
-  margin-left: 125px;
-  margin-top: 20px;
-  */
-  
-  /*for demo*/
-  display:inline-block;
-  vertical-align:middle;
-}
-img{
-    position:relative;
-    border: 1px solid;
-    border-color: #7e92d6;
-  }
-
-.pfp {
-  border-radius: 50%;
-  position:absolute;
-  left: -75px;
-}
-.headerbutton {
-  border: 1px solid #5f73b8;
-  background: #424549;
-  color: white;
-  width: 270px;
-  padding: 15px 20px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  font-family: serif;
-}
-.headerbutton:hover{
-  background:  #7e92d6;
-  /* color: rgb(78, 3, 66); */
-}
-.backgroundbutton {
-    border: 2px solid #121212;
-    background:  #7e92d6;
-    color: white;
-    width: 100px;
-    /* padding: 15px 20px; */
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    font-family: serif;
-  }
-  .backgroundbutton:hover{
-    background: #424549;
-    /* color: rgb(78, 3, 66); */
-  }
-
-</style>
-<style> body { background-color: #121212; color: #7e92d6; } 
-  p{font-family: sans-serif;}
-  .h2 {
-    color:#7e92d6;
-  }
-  .h2-dark{
-    color:black;
-  }
-  hr{background-color: #7e92d6;}
-  .color{color:#7e92d6;}
-  body {
-    padding: 25px;
-    background-color: #121212;
-    color: #7e92d6;
-    font-size: 16px;
-    transition-duration: 0.2s;
-  }
-  hr{background-color: #7e92d6;}
-  .dark-mode {
-    background-color: white;
-    color: black;
-    transition-duration: 0.2s;
-  }
-  .bar-dark{background-color: black}
-  .table-dark{color: black}
-  
-  .border-dark {
-    border: 1px solid black;
-  }
-  .cells-dark {
-    width: 100px;
-      height: 100px;
-      border: 1px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      cursor: pointer;
-  }
-  .board {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-gap: 2px;
+    /* Headers */
+    h1, h2, h3 {
+        color: #ff66b2; /* Pink for headers */
+        font-family: 'Pacifico', cursive; /* Fun, cute font for headers */
     }
-    .cell {
-      width: 100px;
-      height: 100px;
-      border: 1px solid #7e92d6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      cursor: pointer;
+
+    /* Links */
+    a {
+        color: #ff66b2; /* Pink links */
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ff3399; /* Darker pink on hover */
+    }
+
+    /* Buttons */
+    .headerbutton {
+        border: 1px solid #ff99cc;
+        background: #ff66b2;
+        color: white;
+        width: 270px;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 8px;
+    }
+
+    .headerbutton:hover {
+        background: #ff3399; /* Slightly darker pink on hover */
+    }
+
+    /* Profile Picture */
+    .pfp {
+        border-radius: 50%;
+        border: 3px solid #ff99cc;
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Styling the site header */
+    .site-header {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding: 10px;
+        background-color: #ffe6f2; /* Light pink header background */
+        color: #333;
+        text-align: center;
+    }
+
+    /* Dark mode button */
+    .dark-mode {
+        background-color: #333;
+        color: white;
     }
 </style>
+
+<!-- Load custom fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 
 
 <script>
