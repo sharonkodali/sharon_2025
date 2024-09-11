@@ -10,7 +10,6 @@ hide: true
 ## About Me
 
 <div class="about-section">
-  <img src="/images/notebooks/foundation/IMG_2674.JPG" alt="Sharon Kodali" class="profile-pic">
   <p>Hi, my name is Sharon! I love cooking and socializing. I enjoy going to the beach and driving around with my friends.</p>
 </div>
 
@@ -67,7 +66,7 @@ hide: true
 
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffe4e1;
+    background-color: #ffe4e1; /* Light pink background */
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -77,7 +76,7 @@ hide: true
   }
 
   h1, h2 {
-    color: #ff69b4;
+    color: #ff69b4; /* Pink color */
   }
 
   h1 {
@@ -94,14 +93,6 @@ hide: true
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-  }
-
-  .profile-pic {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    max-width: 150px;
-    margin-top: 15px;
   }
 
   p {
@@ -140,13 +131,14 @@ hide: true
 
   .footer {
     text-align: center;
-    background-color: #ff69b4;
+    background-color: #ff69b4; /* Bright pink */
     color: #fff;
     padding: 15px;
     margin-top: 30px;
     border-radius: 8px;
   }
 </style>
+
 
 
 

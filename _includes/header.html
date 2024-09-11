@@ -1,129 +1,73 @@
-<style>
-    /* Background and general text color */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-        background-color: #ffe6f2; /* Soft pink background */
-        color: #333; /* Darker text for readability */
-        font-family: 'Poppins', sans-serif; /* Cute and modern font */
-        font-size: 16px;
-        padding: 20px;
-        transition-duration: 0.2s;
-    }
-    
-    /* Headers */
-    h1, h2, h3 {
-        color: #ff66b2; /* Pink for headers */
-        font-family: 'Pacifico', cursive; /* Fun, cute font for headers */
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe4e1;
+      color: #333;
+      padding-top: 60px; /* Ensure content starts below header */
     }
 
-    /* Links */
-    a {
-        color: #ff66b2; /* Pink links */
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #ff3399; /* Darker pink on hover */
-    }
-
-    /* Buttons */
-    .headerbutton {
-        border: 1px solid #ff99cc;
-        background: #ff66b2;
-        color: white;
-        width: 270px;
-        padding: 10px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        transition-duration: 0.2s;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 8px;
-    }
-
-    .headerbutton:hover {
-        background: #ff3399; /* Slightly darker pink on hover */
-    }
-
-    /* Profile Picture */
-    .pfp {
-        border-radius: 50%;
-        border: 3px solid #ff99cc;
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: 20px auto;
-    }
-
-    /* Styling the site header */
     .site-header {
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        position: relative;
-        padding: 10px;
-        background-color: #ffe6f2; /* Light pink header background */
-        color: #333;
-        text-align: center;
+      background-color: #ff69b4; /* Pink background */
+      color: #fff;
+      padding: 10px 0;
+      width: 100%;
+      position: fixed; /* Fixed at the top */
+      top: 0;
+      left: 0;
+      z-index: 1000; /* Ensure it sits on top of other content */
     }
 
-    /* Dark mode button */
-    .dark-mode {
-        background-color: #333;
-        color: white;
+    nav {
+      display: flex;
+      justify-content: center; /* Center horizontally */
     }
-</style>
 
-<!-- Load custom fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    .menu {
+      list-style: none;
+      display: flex; /* Align items horizontally */
+      gap: 20px; /* Space between items */
+    }
 
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-
-<script>
-  
-var IsLoggedIn1 = "true";
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-  var elem = document.querySelectorAll("#border");
-  elem.forEach(function(border) {
-    border.classList.toggle("border-dark");
-    });
-  var bars = document.querySelectorAll("#bar");
-  bars.forEach(function(bar) {
-    bar.classList.toggle("bar-dark");
-    });
-  var cellz = document.querySelectorAll("#cells");
-  cellz.forEach(function(cells) {
-    cells.classList.toggle("cell");
-    cells.classList.toggle("cells-dark");
-    });
-  var tables = document.querySelectorAll("#table");
-  tables.forEach(function(table) {
-    // table.classList.toggle("myTable")
-    table.classList.toggle("table-dark");
-    });
-  var h2 = document.querySelectorAll("#h2");
-  h2.forEach(function(h2) {
-    // table.classList.toggle("myTable")
-    h2.classList.toggle("h2-dark");
-    });
-}
-</script>
-
-<img id="border" src="{{site.baseurl}}/images/mypfp.png" alt='me' class="pfp">
-<header class="site-header">
-  <div id="header">
+    .nav-link:hover {
+      background-color: #fff;
+      color: #ff69b4;
+    }
+  </style>
+  <title>Sharon Kodali's Blog</title>
+</head>
+<body>
+  <header class="site-header">
     <nav>
-      <ul>
-        <button id="border"class="headerbutton" onclick="myFunction()" style="width:160px;padding: 5px 10px;font-weight:bold;left:23.5%;position:relative;">Dark Mode</button>  
-        <br>
-        <br>
-        <button id="border"type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/';">Home</button> <br \>
-        <button id="border"type="button" class="headerbutton" onclick="window.location.href='{{ site.github.repository_url }}#readme';">View On Github</button>
-        <button id="border" type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/blogs';">All Blogs</button>
+      <ul class="menu">
+        <li><a href="{{site.baseurl}}/" class="nav-link">Home</a></li>
+        <li><a href="{{ site.github.repository_url }}#readme" class="nav-link">View on GitHub</a></li>
+        <li><a href="#" class="nav-link" onclick="myFunction()">Dark Mode</a></li>
+        <li><a href="#" class="nav-link">All Blogs</a></li>
       </ul>
     </nav>
-  </div><!-- end header -->
-</header>
+  </header>
+  <!-- Your page content will go here -->
+</body>
+</html>
