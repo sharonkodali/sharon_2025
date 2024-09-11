@@ -10,6 +10,7 @@ comments: true
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-bottom: 20px; /* Space below dropdown */
   }
 
   .dropbtn {
@@ -30,6 +31,7 @@ comments: true
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 8px;
+    margin-top: 10px; /* Space between button and dropdown */
   }
 
   .dropdown-content a {
