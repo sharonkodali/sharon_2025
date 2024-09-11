@@ -14,7 +14,7 @@ hide: true
   <p>Hi, my name is Sharon! I love cooking and socializing. I enjoy going to the beach and driving around with my friends.</p>
 </div>
 
-# Things I need to work on and feedback from teacher 
+# Things I need to work on and feedback from teacher
 <ul>
   <li>Write more detailed explanations</li>
   <li>Improve formatting consistency</li>
@@ -22,6 +22,7 @@ hide: true
 </ul>
 
 ---
+
 ## My Favorite Books Gallery
 
 <p>Here are some of my favorite books:</p>
@@ -55,7 +56,68 @@ hide: true
   });
 </script>
 
+---
+
+<div class="footer">
+  <p>Thank you for visiting! Stay tuned for more updates and posts.</p>
+</div>
+
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4e1;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1, h2 {
+    color: #ff69b4;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .about-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .profile-pic {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 150px;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #ff69b4;
+  }
+
+  ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.1em;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
   .book-gallery {
     display: flex;
     justify-content: center;
@@ -76,135 +138,13 @@ hide: true
     transform: scale(1.05);
   }
 
-  body {
-    background-color: #ffe4e1;
-    color: #333;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    text-align: center;
-    line-height: 1.6;
-  }
-
-  p {
-    font-size: 1.4em;
-    color: #ff69b4;
-  }
-
-  h2 {
-    font-size: 2.2em;
-    color: #ff69b4;
-  }
-</style>
-
----
-
-
-<div class="footer">
-  <p>Thank you for visiting! Stay tuned for more updates and posts.</p>
-</div>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-  body {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #ffe6f2; /* Light pink background */
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-  }
-
-  h1 {
-    color: #ff1493; /* Pink title */
-    text-align: center;
-    font-size: 2.5em;
-    margin-top: 20px;
-  }
-
-  h2 {
-    color: #ff69b4;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .about-section {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .profile-pic {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    max-width: 150px;
-    margin-top: 15px;
-  }
-
-  p {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  .game-section {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  input, button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius: 5px;
-  }
-
-  button {
-    background-color: #ff69b4; /* Bright pink */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #ff1493;
-  }
-
-  #result {
-    font-size: 1.2em;
-    margin-top: 20px;
-  }
-
-  .photo-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-
-  .photo-gallery img {
-    max-width: 150px;
-    border-radius: 8px;
-  }
-
   .footer {
     text-align: center;
-    background-color: #ff1493;
+    background-color: #ff69b4;
     color: #fff;
     padding: 15px;
     margin-top: 30px;
     border-radius: 8px;
-  }
-
-  ul {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1em;
-    list-style-type: disc;
-    padding-left: 20px;
   }
 </style>
 
