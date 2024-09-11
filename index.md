@@ -22,47 +22,81 @@ hide: true
 </ul>
 
 ---
+## My Favorite Books Gallery
 
-## Guess the Number Game
+<p>Here are some of my favorite books:</p>
 
-<p>Try to guess the number I'm thinking of between 1 and 100!</p>
-
-<div class="game-section">
-  <input type="number" id="guessInput" placeholder="Enter your guess">
-  <button id="guessButton">Guess</button>
-  <p id="result"></p>
-</div>
+<div id="bookGallery" class="book-gallery"></div>
 
 <script>
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
-  let attempts = 0;
+  // Array of favorite book ISBNs
+  const favoriteBooks = [
+    "9780143127741", // Example: "The Goldfinch"
+    "9780679783268", // Example: "Pride and Prejudice"
+    "9780743273565", // Example: "The Great Gatsby"
+    "9780439139601", // Example: "Harry Potter and the Goblet of Fire"
+    // Add more ISBNs of your favorite books
+  ];
 
-  document.getElementById("guessButton").addEventListener("click", function() {
-    const userGuess = parseInt(document.getElementById("guessInput").value);
-    attempts++;
+  const galleryContainer = document.getElementById('bookGallery');
 
-    let resultMessage = '';
-
-    if (userGuess === randomNumber) {
-      resultMessage = `Congratulations! You guessed the right number ${randomNumber} in ${attempts} attempts.`;
-    } else if (userGuess < randomNumber) {
-      resultMessage = "Too low! Try again.";
-    } else if (userGuess > randomNumber) {
-      resultMessage = "Too high! Try again.";
-    }
-
-    document.getElementById("result").innerText = resultMessage;
+  favoriteBooks.forEach(isbn => {
+    // API endpoint to fetch book cover images
+    const apiUrl = `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg`;
+    
+    // Create image element for each book
+    const img = document.createElement('img');
+    img.src = apiUrl;
+    img.alt = "Book cover";
+    img.className = 'book-cover';
+    
+    // Append image to gallery container
+    galleryContainer.appendChild(img);
   });
 </script>
 
+<style>
+  .book-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .book-cover {
+    width: 150px;
+    height: 225px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .book-cover:hover {
+    transform: scale(1.05);
+  }
+
+  body {
+    background-color: #ffe4e1;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  p {
+    font-size: 1.4em;
+    color: #ff69b4;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    color: #ff69b4;
+  }
+</style>
+
 ---
 
-<div class="photo-gallery">
-  <img src="/images/notebooks/foundation/IMG_1185%202.png" alt="Gallery Image 1">
-  <img src="/images/notebooks/foundation/IMG_2776.JPG" alt="Gallery Image 2">
-  <img src="/images/notebooks/foundation/IMG_6016.JPG" alt="Gallery Image 3">
-  <img src="/images/notebooks/foundation/IMG_7198.JPG" alt="Gallery Image 4">
-</div>
 
 <div class="footer">
   <p>Thank you for visiting! Stay tuned for more updates and posts.</p>
