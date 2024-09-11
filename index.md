@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Student Home 
+title: Student Home
 description: Home Page
 hide: true
 ---
@@ -9,9 +9,17 @@ hide: true
 
 ## About Me
 
-![Sharon Kodali1](/images/notebooks/foundation/IMG_2674.JPG)   
+<div class="about-section">
+  <img src="/images/notebooks/foundation/IMG_2674.JPG" alt="Sharon Kodali" class="profile-pic">
+  <p>Hi, my name is Sharon! I love cooking and socializing. I enjoy going to the beach and driving around with my friends.</p>
+</div>
 
-Hi! I'm Sharon Kodali, a passionate student with a love for technology, coding, and creative writing. This blog is my space to share thoughts, projects, and experiences as I navigate my journey through college and beyond. I believe in continuous learning, and I'm excited to explore and document my growth here. Outside of academics, I enjoy painting, hiking, and exploring new cuisines.
+# Things I need to work on and feedback from teacher 
+<ul>
+  <li>Write more detailed explanations</li>
+  <li>Improve formatting consistency</li>
+  <li>Engage more with content feedback</li>
+</ul>
 
 ---
 
@@ -19,10 +27,11 @@ Hi! I'm Sharon Kodali, a passionate student with a love for technology, coding, 
 
 <p>Try to guess the number I'm thinking of between 1 and 100!</p>
 
-<input type="number" id="guessInput" placeholder="Enter your guess">
-<button id="guessButton">Guess</button>
-
-<p id="result"></p>
+<div class="game-section">
+  <input type="number" id="guessInput" placeholder="Enter your guess">
+  <button id="guessButton">Guess</button>
+  <p id="result"></p>
+</div>
 
 <script>
   const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -48,39 +57,49 @@ Hi! I'm Sharon Kodali, a passionate student with a love for technology, coding, 
 
 ---
 
-![Shar](/images/notebooks/foundation/IMG_1185%202.png)  
-![Sh](/images/notebooks/foundation/IMG_2776.JPG)
-![li](/images/notebooks/foundation/IMG_6016.JPG)
-![S](/images/notebooks/foundation/IMG_7198.JPG)
+<div class="photo-gallery">
+  <img src="/images/notebooks/foundation/IMG_1185%202.png" alt="Gallery Image 1">
+  <img src="/images/notebooks/foundation/IMG_2776.JPG" alt="Gallery Image 2">
+  <img src="/images/notebooks/foundation/IMG_6016.JPG" alt="Gallery Image 3">
+  <img src="/images/notebooks/foundation/IMG_7198.JPG" alt="Gallery Image 4">
+</div>
 
-Thank you for visiting! Stay tuned for more updates and posts.
+<div class="footer">
+  <p>Thank you for visiting! Stay tuned for more updates and posts.</p>
+</div>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
   body {
     font-family: 'Press Start 2P', cursive;
-    background-color: #f5f5f5;
+    background-color: #ffe6f2; /* Light pink background */
     color: #333;
     line-height: 1.6;
     padding: 20px;
   }
 
   h1 {
-    color: #ff6347;
+    color: #ff1493; /* Pink title */
     text-align: center;
     font-size: 2.5em;
     margin-top: 20px;
   }
 
   h2 {
-    color: #87cefa;
+    color: #ff69b4;
     font-size: 2em;
     text-align: center;
     margin-top: 20px;
   }
 
-  img {
+  .about-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .profile-pic {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
@@ -91,25 +110,11 @@ Thank you for visiting! Stay tuned for more updates and posts.
   p {
     font-size: 1.2em;
     text-align: center;
-    padding: 0 20px;
   }
 
-  .content {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .footer {
+  .game-section {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   input, button {
@@ -117,27 +122,57 @@ Thank you for visiting! Stay tuned for more updates and posts.
     margin: 10px auto;
     padding: 10px;
     font-size: 1.2em;
+    border-radius: 5px;
   }
 
   button {
-    background-color: #87cefa;
+    background-color: #ff69b4; /* Bright pink */
     color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
   }
 
   button:hover {
-    background-color: #ff6347;
+    background-color: #ff1493;
   }
 
   #result {
     font-size: 1.2em;
-    text-align: center;
     margin-top: 20px;
   }
+
+  .photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .photo-gallery img {
+    max-width: 150px;
+    border-radius: 8px;
+  }
+
+  .footer {
+    text-align: center;
+    background-color: #ff1493;
+    color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+
+  ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
 </style>
+
 
 
