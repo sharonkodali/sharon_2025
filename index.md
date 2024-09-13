@@ -1,8 +1,8 @@
 ---
 layout: base
-title: Student Home
+title: Sharon Kodali's Blog
 description: Home Page
-hide: true
+hide: false
 ---
 
 # Welcome to Sharon Kodali's Blog
@@ -10,10 +10,12 @@ hide: true
 ## About Me
 
 <div class="about-section">
-  <p>Hi, my name is Sharon! I love cooking and socializing. I enjoy going to the beach and driving around with my friends.</p>
+  <p>Hi, my name is Sharon Kodali! I’m passionate about technology, painting, and exploring new cuisines. I enjoy painting, hiking, and delving into various tech projects. Check out my latest projects and interests below!</p>
+  <img src="https://via.placeholder.com/150" alt="Sharon Kodali" class="pfp">
 </div>
 
-# Things I need to work on and feedback from teacher
+# Things I Need to Work On and Feedback
+
 <ul>
   <li>Write more detailed explanations</li>
   <li>Improve formatting consistency</li>
@@ -54,6 +56,18 @@ hide: true
     galleryContainer.appendChild(img);
   });
 </script>
+
+---
+
+## Notebooks
+
+<div class="notebook-menu">
+  <ul>
+    <li><a href="notebooks/planning.md">Planning Document</a></li>
+    <li><a href="notebooks/javascript.md">JavaScript Notebook</a></li>
+    <li><a href="notebooks/about.md">About Page Notebook</a></li>
+  </ul>
+</div>
 
 ---
 
@@ -137,6 +151,26 @@ hide: true
     padding: 15px;
     margin-top: 30px;
     border-radius: 8px;
+  }
+
+  .notebook-menu ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .notebook-menu li {
+    margin: 10px 0;
+  }
+
+  .notebook-menu a {
+    color: #ff69b4;
+    text-decoration: none;
+  }
+
+  .notebook-menu a:hover {
+    text-decoration: underline;
   }
 </style>
 
