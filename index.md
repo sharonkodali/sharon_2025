@@ -18,7 +18,7 @@ hide: false
 
 ## Flags Gallery
 
-<p>Here are some flags I find interesting:</p>
+<p>Here are some countries Ive visited! (imported from wiki images):</p>
 
 <div class="flag-gallery">
   <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_India.svg" alt="India Flag" class="flag">
