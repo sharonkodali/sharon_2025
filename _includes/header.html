@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,54 +17,44 @@
       font-family: 'Poppins', sans-serif; /* Cute and modern font */
       font-size: 16px;
       padding: 20px;
+      padding-top: 80px; /* Space below the fixed header */
       transition-duration: 0.2s;
-      padding-top: 50px; /* Ensure content starts below header */
     }
-    
+
     /* Headers */
     h1, h2, h3 {
       color: #ff66b2; /* Pink for headers */
       font-family: 'Pacifico', cursive; /* Fun, cute font for headers */
-    }
-
-    /* Links */
-    a {
-      color: #ff66b2; /* Pink links */
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #ff3399; /* Darker pink on hover */
-    }
-
-    /* Buttons */
-    .headerbutton {
-      border: 1px solid #ff99cc;
-      background: #ff66b2;
-      color: white;
-      width: 200px;
-      padding: 10px;
-      font-weight: bold;
       text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 14px;
-      transition-duration: 0.2s;
-      cursor: pointer;
-      font-family: 'Poppins', sans-serif;
-      border-radius: 8px;
     }
 
-    .headerbutton:hover {
-      background: #ff3399; /* Slightly darker pink on hover */
+    /* Fixed header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffe6f2; /* Background same as body */
+      padding: 10px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title in header */
+    .title {
+      font-size: 24px;
+      color: #ff66b2;
+      font-family: 'Pacifico', cursive;
+      margin-left: 20px;
     }
 
     /* Dropdown Menu */
     .dropdown {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-family: 'Poppins', sans-serif;
+      position: relative;
+      margin-right: 20px;
     }
 
     .dropdown button {
@@ -120,28 +109,29 @@
       width: 150px;
       height: 150px;
       display: block;
-      margin: 20px auto;
+      margin: 40px auto; /* Adjusted for better layout */
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Sharon Kodali's Blog</title>
 </head>
 <body>
-  <header class="dropdown">
-    <button onclick="toggleDropdown()">Menu</button>
-    <div id="dropdownContent" class="dropdown-content">
-      <a href="{{site.baseurl}}/">Home</a>
-      <a href="{{ site.github.repository_url }}#readme">View On Github</a>
-      <a href="{{site.baseurl}}/blogs">All Blogs</a>
-      <button onclick="myFunction()">Dark Mode</button>
+  <header>
+    <div class="title">Sharon Kodali's Blog</div>
+    <div class="dropdown">
+      <button onclick="toggleDropdown()">Menu</button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="{{site.baseurl}}/">Home</a>
+        <a href="{{ site.github.repository_url }}#readme">View On Github</a>
+        <a href="{{site.baseurl}}/blogs">All Blogs</a>
+        <button onclick="myFunction()">Dark Mode</button>
+      </div>
     </div>
   </header>
 
   <img id="border" src="{{site.baseurl}}/images/mypfp.png" alt='me' class="pfp">
 
   <script>
-    var IsLoggedIn1 = "true";
-
     function myFunction() {
       var element = document.body;
       element.classList.toggle("dark-mode");
@@ -149,29 +139,26 @@
       elem.forEach(function(border) {
         border.classList.toggle("border-dark");
       });
-      var bars = document.querySelectorAll("#bar");
-      bars.forEach(function(bar) {
-        bar.classList.toggle("bar-dark");
-      });
-      var cellz = document.querySelectorAll("#cells");
-      cellz.forEach(function(cells) {
-        cells.classList.toggle("cell");
-        cells.classList.toggle("cells-dark");
-      });
-      var tables = document.querySelectorAll("#table");
-      tables.forEach(function(table) {
-        table.classList.toggle("table-dark");
-      });
-      var h2 = document.querySelectorAll("#h2");
-      h2.forEach(function(h2) {
-        h2.classList.toggle("h2-dark");
-      });
     }
 
     function toggleDropdown() {
       document.getElementById("dropdownContent").classList.toggle("show");
     }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown button')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
   </script>
 </body>
 </html>
+
 
