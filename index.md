@@ -14,13 +14,23 @@ hide: false
   <img src="https://via.placeholder.com/150" alt="Sharon Kodali" class="pfp">
 </div>
 
-# Things I Need to Work On and Feedback
+---
 
-<ul>
-  <li>Write more detailed explanations</li>
-  <li>Improve formatting consistency</li>
-  <li>Engage more with content feedback</li>
-</ul>
+## Flags Gallery
+
+<p>Here are some flags I find interesting:</p>
+
+<div class="flag-gallery">
+  <img src="https://www.countryflags.io/in/shiny/64.png" alt="India Flag" class="flag">
+  <img src="https://www.countryflags.io/us/shiny/64.png" alt="USA Flag" class="flag">
+  <img src="https://www.countryflags.io/it/shiny/64.png" alt="Italy Flag" class="flag">
+  <img src="https://www.countryflags.io/fr/shiny/64.png" alt="France Flag" class="flag">
+  <img src="https://www.countryflags.io/ch/shiny/64.png" alt="Switzerland Flag" class="flag">
+  <img src="https://www.countryflags.io/gr/shiny/64.png" alt="Greece Flag" class="flag">
+  <img src="https://www.countryflags.io/gb/shiny/64.png" alt="UK Flag" class="flag">
+  <img src="https://www.countryflags.io/mx/shiny/64.png" alt="Mexico Flag" class="flag">
+  <img src="https://www.countryflags.io/jp/shiny/64.png" alt="Japan Flag" class="flag">
+</div>
 
 ---
 
@@ -124,6 +134,21 @@ hide: false
     padding-left: 20px;
   }
 
+  .flag-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .flag {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
   .book-gallery {
     display: flex;
     justify-content: center;
@@ -173,6 +198,7 @@ hide: false
     text-decoration: underline;
   }
 </style>
+
 
 
 
