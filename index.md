@@ -21,15 +21,15 @@ hide: false
 <p>Here are some flags I find interesting:</p>
 
 <div class="flag-gallery">
-  <img src="https://www.countryflags.io/in/shiny/64.png" alt="India Flag" class="flag">
-  <img src="https://www.countryflags.io/us/shiny/64.png" alt="USA Flag" class="flag">
-  <img src="https://www.countryflags.io/it/shiny/64.png" alt="Italy Flag" class="flag">
-  <img src="https://www.countryflags.io/fr/shiny/64.png" alt="France Flag" class="flag">
-  <img src="https://www.countryflags.io/ch/shiny/64.png" alt="Switzerland Flag" class="flag">
-  <img src="https://www.countryflags.io/gr/shiny/64.png" alt="Greece Flag" class="flag">
-  <img src="https://www.countryflags.io/gb/shiny/64.png" alt="UK Flag" class="flag">
-  <img src="https://www.countryflags.io/mx/shiny/64.png" alt="Mexico Flag" class="flag">
-  <img src="https://www.countryflags.io/jp/shiny/64.png" alt="Japan Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_India.svg" alt="India Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Italy Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg" alt="Switzerland Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg" alt="Greece Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_Kingdom.svg" alt="UK Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Mexico Flag" class="flag">
+  <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Japan Flag" class="flag">
 </div>
 
 ---
@@ -198,9 +198,3 @@ hide: false
     text-decoration: underline;
   }
 </style>
-
-
-
-
-
-
