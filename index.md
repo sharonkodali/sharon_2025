@@ -77,6 +77,7 @@ hide: true
 
   h1, h2 {
     color: #ff69b4; /* Pink color */
+    font-family: 'Poppins', sans-serif;
   }
 
   h1 {
@@ -138,6 +139,7 @@ hide: true
     border-radius: 8px;
   }
 </style>
+
 
 
 
