@@ -36,7 +36,7 @@ hide: false
 
 ## My Favorite Books Gallery
 
-<p>Here are some of my favorite books:</p>
+<p>Ever since I was little, I have loved to read! Here are some of my favorite book!!:</p>
 
 <div id="bookGallery" class="book-gallery"></div>
 
