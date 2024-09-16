@@ -11,8 +11,11 @@ hide: false
 
 <div class="about-section">
   <p>Hi, my name is Sharon Kodali! I’m passionate about technology, painting, and exploring new cuisines. I enjoy painting, hiking, and delving into various tech projects. Check out my latest projects and interests below!</p>
-  <img src="https://via.placeholder.com/150" alt="Sharon Kodali" class="pfp">
+
+  ![main image](_site/images/notebooks/foundation/IMG_2776.JPG)
 </div>
+
+
 
 ---
 
