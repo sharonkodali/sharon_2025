@@ -1,10 +1,4 @@
----
----
-layout: base
-title: Sharon Kodali's Blog
-description: Home Page
-hide: false
----
+
 
 # Welcome to Sharon Kodali's Blog
 
@@ -14,9 +8,9 @@ hide: false
   <p>Hi, my name is Sharon Kodali! I’m passionate about technology, painting, and exploring new cuisines. I enjoy painting, hiking, and delving into various tech projects. Check out my latest projects and interests below!</p>
 
   <div class="image-gallery">
-    <img src="_site/images/notebooks/foundation/IMG_2776.JPG" alt="Image 1">
-    <img src="_site/images/notebooks/foundation/IMG_2777.JPG" alt="Image 2">
-    <img src="_site/images/notebooks/foundation/IMG_2778.JPG" alt="Image 3">
+     <img src="/Users/sharonkodali/nighthawk/sharon_2025/IMG_1185 3.png" alt="Image 1">
+    <img src="/Users/sharonkodali/nighthawk/sharon_2025/IMG_3553 3.png" alt="Image 2">
+    <img src="_site/images/notebooks/foundation/IMG_2776.JPG" alt="Image 3">
   </div>
 </div>
 
