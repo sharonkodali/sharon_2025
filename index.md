@@ -1,4 +1,5 @@
 ---
+---
 layout: base
 title: Sharon Kodali's Blog
 description: Home Page
@@ -12,16 +13,18 @@ hide: false
 <div class="about-section">
   <p>Hi, my name is Sharon Kodali! I’m passionate about technology, painting, and exploring new cuisines. I enjoy painting, hiking, and delving into various tech projects. Check out my latest projects and interests below!</p>
 
-  ![main image](_site/images/notebooks/foundation/IMG_2776.JPG)
+  <div class="image-gallery">
+    <img src="_site/images/notebooks/foundation/IMG_2776.JPG" alt="Image 1">
+    <img src="_site/images/notebooks/foundation/IMG_2777.JPG" alt="Image 2">
+    <img src="_site/images/notebooks/foundation/IMG_2778.JPG" alt="Image 3">
+  </div>
 </div>
-
-
 
 ---
 
 ## Flags Gallery
 
-<p>Here are some countries Ive visited! (imported from wiki images):</p>
+<p>Here are some countries I've visited! (imported from wiki images):</p>
 
 <div class="flag-gallery">
   <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_India.svg" alt="India Flag" class="flag">
@@ -39,7 +42,7 @@ hide: false
 
 ## My Favorite Books Gallery
 
-<p>Ever since I was little, I have loved to read! Here are some of my favorite book!!:</p>
+<p>Ever since I was little, I have loved to read! Here are some of my favorite books:</p>
 
 <div id="bookGallery" class="book-gallery"></div>
 
@@ -121,6 +124,20 @@ hide: false
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .image-gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   p {
