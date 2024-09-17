@@ -92,12 +92,13 @@ hide: false
 </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Pacifico&display=swap');
 
+  /* Body Styling */
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive;
     background-color: #ffe4e1; /* Light pink background */
-    color: #333;
+    color: #ff69b4; /* Pink text */
     line-height: 1.6;
     padding: 20px;
     max-width: 1000px;
@@ -105,27 +106,31 @@ hide: false
     text-align: center;
   }
 
+  /* Heading Styles */
   h1, h2 {
-    color: #ff69b4; /* Pink color */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Pacifico', cursive; /* Cute, cursive font */
+    color: #ff1493; /* Deep pink color */
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(255, 105, 180, 0.5); /* Adds a soft glow */
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(255, 105, 180, 0.5);
   }
 
-  .about-section {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+  /* Paragraph Styles */
+  p {
+    font-size: 1.3em;
+    color: #ff69b4; /* Bright pink */
   }
 
+  /* Image Gallery Styling */
   .image-gallery {
     display: flex;
     justify-content: center;
@@ -138,22 +143,14 @@ hide: false
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
   }
 
-  p {
-    font-size: 1.2em;
-    color: #ff69b4;
+  .image-gallery img:hover {
+    transform: scale(1.05);
   }
 
-  ul {
-    text-align: left;
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 1.1em;
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-
+  /* Flag Gallery Styling */
   .flag-gallery {
     display: flex;
     justify-content: center;
@@ -169,6 +166,7 @@ hide: false
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
+  /* Book Gallery Styling */
   .book-gallery {
     display: flex;
     justify-content: center;
@@ -189,6 +187,7 @@ hide: false
     transform: scale(1.05);
   }
 
+  /* Footer Styling */
   .footer {
     text-align: center;
     background-color: #ff69b4; /* Bright pink */
@@ -198,6 +197,7 @@ hide: false
     border-radius: 8px;
   }
 
+  /* Notebook Menu Styling */
   .notebook-menu ul {
     list-style: none;
     padding: 0;
