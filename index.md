@@ -71,7 +71,7 @@
 
 <div class="notebook-menu">
   <ul>
-    <li><a href="notebooks/planning.md">Planning Document</a></li>
+    <li><a href="_notebooks/planning.md">Planning Document</a></li>
     <li><a href="notebooks/javascript.md">JavaScript Notebook</a></li>
     <li><a href="notebooks/about.md">About Page Notebook</a></li>
   </ul>
